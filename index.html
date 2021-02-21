@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,13 +26,58 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <h2 class="text-center" id="today">Day of the Week</h2>
+      <br>
+      <ul class="list-group list-group-horizontal d-flex timeBlock">
+        <li class="list-group-item hour">9am-10am</li>
+        <li class="list-group-item content" contenteditable="true">Click to add a new event.</li>
+        <button type="button" class="saveBtn list-group-item list-group-item-action">Save Item</button>
+      </ul>
+      <ul class="list-group list-group-horizontal d-flex timeBlock">
+        <li class="list-group-item hour">10am-11am</li>
+        <li class="list-group-item content" contenteditable="true">Click to add a new event.</li>
+        <button type="button" class="saveBtn list-group-item list-group-item-action">Save Item</button>
+      </ul>
+      <ul class="list-group list-group-horizontal d-flex timeBlock">
+        <li class="list-group-item hour">11am-12pm</li>
+        <li class="list-group-item content" contenteditable="true">Click to add a new event.</li>
+        <button type="button" class="saveBtn list-group-item list-group-item-action">Save Item</button>
+      </ul>
+      <ul class="list-group list-group-horizontal d-flex timeBlock">
+        <li class="list-group-item hour">12pm-1pm</li>
+        <li class="list-group-item content" contenteditable="true">Click to add a new event.</li>
+        <button type="button" class="saveBtn list-group-item list-group-item-action">Save Item</button>
+      </ul>
+      <ul class="list-group list-group-horizontal d-flex timeBlock">
+        <li class="list-group-item hour">1pm-2pm</li>
+        <li class="list-group-item content" contenteditable="true">Click to add a new event.</li>
+        <button type="button" class="saveBtn list-group-item list-group-item-action">Save Item</button>
+      </ul>
+      <ul class="list-group list-group-horizontal d-flex timeBlock">
+        <li class="list-group-item hour">2pm-3pm</li>
+        <li class="list-group-item content" contenteditable="true">Click to add a new event.</li>
+        <button type="button" class="saveBtn list-group-item list-group-item-action">Save Item</button>
+      </ul>
+      <ul class="list-group list-group-horizontal d-flex timeBlock">
+        <li class="list-group-item hour">3pm-4pm</li>
+        <li class="list-group-item content" contenteditable="true">Click to add a new event.</li>
+        <button type="button" class="saveBtn list-group-item list-group-item-action">Save Item</button>
+      </ul>
+      <ul class="list-group list-group-horizontal d-flex timeBlock">
+        <li class="list-group-item hour">4pm-5pm</li>
+        <li class="list-group-item content" contenteditable="true">Click to add a new event.</li>
+        <button type="button" class="saveBtn list-group-item list-group-item-action">Save Item</button>
+      </ul>
+      <br>
+      <br>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/luxon.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
