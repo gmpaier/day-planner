@@ -13,6 +13,7 @@ var memo = {
     four: "",
 }
 
+
 function setMemo(){
     let i = parseInt(this.value); 
     let timeblock = $(".content");
@@ -34,6 +35,10 @@ function setMemo(){
                 }
             }
     }
+})();
+
+(function whatDay(){
+    $("#today").text(today.toLocaleString(DateTime.DATE_HUGE));
 })();
 
 
