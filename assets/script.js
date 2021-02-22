@@ -11,14 +11,17 @@ var memo = {
     two: "",
     three: "",
     four: "",
-}
+};
 
+var keyList = ["nine", "ten", "eleven", "twelve", "one", "two"];
 
 function setMemo(){
     let i = parseInt(this.value); 
     let timeblock = $(".content");
-    memo[i] = trim(timeblock[i].textContent);
+    let key = keyList[i];
+    memo[key] = timeblock[i].textContent;
     localStorage.setItem("memoData", JSON.stringify(memo));
+    console.log(memo);
 }
 
 (function getMemo() {
@@ -28,10 +31,12 @@ function setMemo(){
         default:
             let saveMemo = JSON.parse(localStorage.getItem("memoData"));
             let timeblock = $(".content");
-            for (i in saveMemo){
-                if (saveMemo[i]){
-                    timeblock[i].textContent = saveMemo[i];
-                    memo[i] = saveMemo[i];
+            console.log(saveMemo);
+            for (let i = 0; i < keyList.length; i++){
+                let key = keyList[i];
+                if (saveMemo[key]){
+                    timeblock[i].textContent = saveMemo[key];
+                    memo[key] = saveMemo[key];
                 }
             }
     }
