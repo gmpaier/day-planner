@@ -1,7 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  /* line-height: 1; */
 }
 
 .jumbotron {
@@ -13,12 +12,12 @@ body {
   padding-bottom: 0px;
 }
 
-.timeBlock {
+.timeblock {
   min-height: 60px;
 }
 
 .hour {
-  background-color: lightgray;
+  background-color: lightgoldenrodyellow;
   text-align: center;
   width: 135px;
 }
