@@ -17,7 +17,7 @@ var memo = {
 function setMemo(){
     let i = parseInt(this.value); 
     let timeblock = $(".content");
-    memo[i] = timeblock[i].textContent;
+    memo[i] = trim(timeblock[i].textContent);
     localStorage.setItem("memoData", JSON.stringify(memo));
 }
 
@@ -62,4 +62,5 @@ function setMemo(){
 })();
 
 $(".saveBtn").on("click", setMemo);
-
+$(".content").on("focus", function(){this.textContent = "";});
+$(".content").on("blur", function(){if (!this.textContent){this.textContent = "Open timeslot."}});
