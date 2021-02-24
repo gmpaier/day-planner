@@ -19,15 +19,14 @@ body {
 .hour {
   background-color: lightgoldenrodyellow;
   text-align: center;
-  width: 135px;
+  width: 12.5%;
 }
 
 .content {
-  width: 875px;
+  width: 79%;
 }
 
 .saveBtn {
   background-color: lightskyblue;
-  width: 125px;
+  width: 10.5%;
 }
-
