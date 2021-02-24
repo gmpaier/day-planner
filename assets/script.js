@@ -13,7 +13,7 @@ var memo = {
     four: "",
 };
 
-var keyList = ["nine", "ten", "eleven", "twelve", "one", "two"];
+var keyList = ["nine", "ten", "eleven", "twelve", "one", "two", "three", "four"];
 
 function setMemo(){
     let i = parseInt(this.value); 
